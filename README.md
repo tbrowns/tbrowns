@@ -115,11 +115,11 @@ A custom document search pipeline that chunks text, embeds content, stores vecto
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=tbrowns&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?user=tbrowns&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
 
 <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=tbrowns&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tbrowns&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?user=tbrowns&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
 
 </div>
 
