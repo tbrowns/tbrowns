@@ -1,180 +1,57 @@
 <div align="center">
 
-# Hi, I'm Tom Obande 👋
-
-### Full-Stack Developer • AI/RAG Builder • FastAPI + Next.js Enthusiast
-
-I build practical software that combines clean user interfaces, reliable backends, and AI-powered features.
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2500&pause=800&center=true&vCenter=true&width=700&lines=Full-Stack+Developer;Next.js+%2B+FastAPI+Builder;AI+%26+RAG+Application+Developer;Turning+Ideas+Into+Working+Products" alt="Typing SVG" />
+<img src="./terminal.svg" width="760" alt="tom@obande — stack and current projects">
 
 </div>
 
----
+## Selected work
 
-## 🚀 About Me
+**[ShambaLens AI](https://github.com/tbrowns/shambalens-ai)** — evidence-first crop triage for Kenyan smallholders
 
-I'm a developer from Kenya focused on building useful, production-minded web applications.
+Most crop classifiers give you one confident label and hide the uncertainty. ShambaLens does the opposite: it gates the photo on quality first, records only what's visibly there, then ranks up to three competing causes and asks the farmer up to three questions *chosen for their ability to separate the leaders*. The ranking is revised from those answers, an independent pass verifies evidence and calibration, and deterministic guardrails strip unsafe chemical instructions even if the model generates them.
 
-I enjoy working on projects that mix:
-
-- Modern frontend experiences with **Next.js, React, TypeScript, Tailwind CSS**
-- Backend systems with **Python, FastAPI, Node.js**
-- Databases and auth with **PostgreSQL, Supabase, Firebase, JWT**
-- AI features using **RAG, embeddings, vector databases, and LLM APIs**
-- Real-world tools like document converters, AI note apps, dashboards, and automation systems
-
-I like building things that are not just demos, but products people can actually use.
+`FastAPI` `Next.js` `Postgres + Alembic` `Firebase Storage` `vision + LLM` — 19 tests, CI against a live Postgres service
 
 ---
 
-## 🧠 What I'm Currently Building / Learning
+**[Mindbase](https://github.com/tbrowns/mind-base)** — cited answers over an internal knowledge base · [live](https://mind-base-nine.vercel.app)
 
-```txt
-AI-powered apps        ███████████████████░░
-Full-stack systems     ██████████████████░░░
-FastAPI backends       ████████████████░░░░░
-RAG + Vector search    ████████████████░░░░░
-Cloud deployment       █████████████░░░░░░░░
-```
+Ingests internal documents, meeting transcripts and a Gmail inbox; masks obvious personal data before anything is stored; chunks and indexes to Pinecone. Retrieved chunks are filtered for relevance *before* they reach the model, so answers stay grounded and every claim carries a source. Missing credentials fail loudly rather than silently degrading to a worse provider.
 
-Currently exploring:
-
-- Better authentication flows with backend-owned JWT/session auth
-- RAG systems using embeddings, vector stores, and document search
-- FastAPI services for file conversion, AI processing, and automation
-- Clean portfolio projects that prove real-world skill
+`Next.js 16` `React 19` `Pinecone` `Groq` `Firestore`
 
 ---
 
-## 🛠️ Tech Stack
+**[DRIP Orchestrator](https://github.com/tbrowns/drip_orch_platform)** — dividend reinvestment for the Nairobi Securities Exchange
 
-### Frontend
+NSE data isn't available in the tools that model dividend reinvestment, so I built the piece that was missing: live quote scraping, dividend history tracking, and simulation of what reinvested dividends actually compound into over time.
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Shadcn UI](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
-
-### Backend
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-
-### Database & Cloud
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-### AI / Data / Tools
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![Google AI](https://img.shields.io/badge/Google_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)
-![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge&logo=qdrant&logoColor=white)
+`FastAPI` `SQLAlchemy` `JWT auth` `web scraping`
 
 ---
 
-## 📌 Featured Project Ideas / Work
+**[Finly](https://github.com/tbrowns/finly_platform)** — AI financial controller for founders
 
-### 🤖 AI Note-Taking & Document Chat App
-A NotebookLM-style application for uploading documents, creating notebooks, and chatting with files using RAG.
+Pulls monthly books from Zoho, normalises them into Postgres, then runs four *deterministic* checks — cash-flow risk, fraud indicators, personal/business account mixing, reconciliation. The model only writes the explanation; it never decides whether something is wrong. That split is the whole design.
 
-**Stack:** Next.js, Supabase, Firebase Storage, embeddings, AI SDK, vector search
+`FastAPI` `Zoho OAuth2` `Neon Postgres` `Groq`
 
----
+## How I build
 
-### 📄 File-to-Markdown Converter API
-A FastAPI backend that accepts different file formats and converts them into Markdown using Microsoft MarkItDown.
+The through-line in the work above is keeping the model on a short leash. Finly decides with deterministic code and lets the LLM narrate. ShambaLens makes uncertainty visible instead of collapsing it into one label, and runs a separate verification pass before a farmer sees anything. Mindbase filters retrieved context before generation rather than hoping the model ignores the noise.
 
-**Stack:** FastAPI, Python, file upload APIs, Markdown processing
+I'd rather ship something narrow that holds up than something broad that demos well.
 
----
+## Stack
 
-### 🧠 Sign Language Recognition System
-A computer vision project that recognizes sign language gestures using hand landmark detection and machine learning.
+| | |
+|---|---|
+| **Backend** | Python · FastAPI · SQLAlchemy · Node.js · Express |
+| **Frontend** | TypeScript · Next.js · React · Tailwind · shadcn/ui |
+| **Data** | PostgreSQL · Neon · Supabase · Firestore · Pinecone |
+| **AI** | RAG pipelines · embeddings · vector search · Groq · Gemini · vision models |
+| **Infra** | Docker · GitHub Actions · Vercel · nginx |
 
-**Stack:** Python, MediaPipe, scikit-learn, Streamlit
+## Elsewhere
 
----
-
-### 🔎 RAG Search System
-A custom document search pipeline that chunks text, embeds content, stores vectors, and retrieves relevant context for AI answers.
-
-**Stack:** Python, Supabase, LangChain, embeddings, vector similarity search
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=tbrowns&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-
-<img height="170" src="https://streak-stats.demolab.com?user=tbrowns&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tbrowns&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
-
-</div>
-
----
-
-## 🧩 How I Think as a Developer
-
-```txt
-Problem first.
-Then data model.
-Then API design.
-Then UI.
-Then polish.
-Then deployment.
-Then improve from feedback.
-```
-
-I care about:
-
-- Clear project structure
-- Simple but scalable backend logic
-- Clean user experience
-- Secure authentication
-- Useful AI features, not just AI hype
-- Building projects that can become real products
-
----
-
-## 🌱 Current Goals
-
-- Build stronger full-stack portfolio projects
-- Improve backend architecture with FastAPI
-- Learn more about scalable RAG and vector databases
-- Ship more public GitHub projects
-- Contribute to open-source projects
-- Land real-world developer opportunities
-
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://obande.netlify.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tom-obande-13811a1a8)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tb.obande@gmail.com)
-
-</div>
-
----
-
-<div align="center">
-
-### “Build useful things. Keep learning. Ship often.”
-
-![Profile views](https://komarev.com/ghpvc/?username=tbrowns&style=for-the-badge)
-
-</div>
+[Portfolio](https://obande.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/tom-obande-13811a1a8) · [tb.obande@gmail.com](mailto:tb.obande@gmail.com)

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="372" viewBox="0 0 760 372" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="Terminal session: Tom Obande, full-stack engineer and applied AI developer in Nairobi. Stack: FastAPI, SQLAlchemy, Postgres, Next.js, React, TypeScript, RAG, Groq, Pinecone, Docker, GitHub Actions, Neon. Shipping: shambalens, mindbase, drip-orch.">
+  <title>tom@obande — ~/dev</title>
+
+  <style>
+    .t   { font-size: 15px; }
+    .dim { fill: #7D8590; }
+    .cmd { fill: #E6EDF3; }
+    .pmt { fill: #56D4DD; }
+    .key { fill: #FFA657; }
+    .str { fill: #A5D6FF; }
+    .ok  { fill: #3FB950; }
+    .nam { fill: #D2A8FF; }
+
+    /* every animation shares one 14s timeline, so the loop never drifts */
+    .cw   { animation: 14s infinite both; }
+    .line { opacity: 0; animation: 14s infinite both; }
+
+    /* typed commands: clip width advances one character at a time */
+    #r1 { animation-name: t1; animation-timing-function: steps(8);  }
+    #r2 { animation-name: t2; animation-timing-function: steps(16); }
+    #r3 { animation-name: t3; animation-timing-function: steps(18); }
+
+    @keyframes t1 { 0%,1.4%  { width: 0 }  6.4%,96% { width: 76px  } 96.5%,100% { width: 0 } }
+    @keyframes t2 { 0%,11.4% { width: 0 } 19.3%,96% { width: 148px } 96.5%,100% { width: 0 } }
+    @keyframes t3 { 0%,27.9% { width: 0 } 36.4%,96% { width: 166px } 96.5%,100% { width: 0 } }
+
+    /* output lines fade in on their own beat */
+    #l2  { animation-name: f2  }
+    #l4  { animation-name: f4  }
+    #l5  { animation-name: f5  }
+    #l6  { animation-name: f6  }
+    #l7  { animation-name: f7  }
+    #l9  { animation-name: f9  }
+    #l10 { animation-name: f10 }
+    #l11 { animation-name: f11 }
+
+    @keyframes f2  { 0%,6.6%  { opacity: 0 }  7.6%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f4  { 0%,19.6% { opacity: 0 } 20.6%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f5  { 0%,20.7% { opacity: 0 } 21.7%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f6  { 0%,21.8% { opacity: 0 } 22.8%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f7  { 0%,22.9% { opacity: 0 } 23.9%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f9  { 0%,36.8% { opacity: 0 } 37.8%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f10 { 0%,38.3% { opacity: 0 } 39.3%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+    @keyframes f11 { 0%,39.8% { opacity: 0 } 40.8%,96% { opacity: 1 } 96.5%,100% { opacity: 0 } }
+
+    #cursor { animation: blink 1.06s steps(1) infinite; }
+    @keyframes blink { 0%,50% { opacity: 1 } 51%,100% { opacity: 0 } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cw   { animation: none; width: 700px }
+      .line { animation: none; opacity: 1 }
+      #cursor { animation: none }
+    }
+  </style>
+
+  <!-- window chrome -->
+  <rect x="0.5" y="0.5" width="759" height="371" rx="10" fill="#0B0F14" stroke="#232B36"/>
+  <path d="M0.5 10.5a10 10 0 0 1 10-10h739a10 10 0 0 1 10 10V37H0.5z" fill="#11161D"/>
+  <line x1="0.5" y1="37" x2="759.5" y2="37" stroke="#232B36"/>
+  <circle cx="22" cy="19" r="5.5" fill="#FF5F57"/>
+  <circle cx="41" cy="19" r="5.5" fill="#FEBC2E"/>
+  <circle cx="60" cy="19" r="5.5" fill="#28C840"/>
+  <text class="dim" x="380" y="23.5" font-size="12.5" text-anchor="middle">tom@obande — ~/dev</text>
+
+  <clipPath id="c1"><rect class="cw" id="r1" x="26" y="52" width="0" height="24"/></clipPath>
+  <text class="t" y="68" clip-path="url(#c1)"><tspan class="pmt" x="26">$</tspan><tspan class="cmd" x="44">whoami</tspan></text>
+
+  <text id="l2" class="t line" y="90"><tspan class="nam" x="26">Tom Obande</tspan><tspan class="dim" x="134">&#183; full-stack engineer, applied AI &#183; Nairobi, KE</tspan></text>
+
+  <clipPath id="c2"><rect class="cw" id="r2" x="26" y="104" width="0" height="24"/></clipPath>
+  <text class="t" y="120" clip-path="url(#c2)"><tspan class="pmt" x="26">$</tspan><tspan class="cmd" x="44">cat stack.toml</tspan></text>
+
+  <text id="l4" class="t line" y="142"><tspan class="key" x="26">backend</tspan><tspan class="dim" x="107">= [</tspan><tspan class="str">"FastAPI", "SQLAlchemy", "Postgres"</tspan><tspan class="dim">]</tspan></text>
+  <text id="l5" class="t line" y="164"><tspan class="key" x="26">frontend</tspan><tspan class="dim" x="107">= [</tspan><tspan class="str">"Next.js", "React 19", "TypeScript"</tspan><tspan class="dim">]</tspan></text>
+  <text id="l6" class="t line" y="186"><tspan class="key" x="26">ai</tspan><tspan class="dim" x="107">= [</tspan><tspan class="str">"RAG", "Groq", "Pinecone", "vision"</tspan><tspan class="dim">]</tspan></text>
+  <text id="l7" class="t line" y="208"><tspan class="key" x="26">infra</tspan><tspan class="dim" x="107">= [</tspan><tspan class="str">"Docker", "GitHub Actions", "Neon"</tspan><tspan class="dim">]</tspan></text>
+
+  <clipPath id="c3"><rect class="cw" id="r3" x="26" y="226" width="0" height="24"/></clipPath>
+  <text class="t" y="242" clip-path="url(#c3)"><tspan class="pmt" x="26">$</tspan><tspan class="cmd" x="44">ls -1 ~/shipping</tspan></text>
+
+  <text id="l9"  class="t line" y="264"><tspan class="ok" x="26">&#10004;</tspan><tspan class="cmd" x="44">shambalens</tspan><tspan class="dim" x="152">crop triage &#183; vision + LLM &#183; FastAPI, Next.js</tspan></text>
+  <text id="l10" class="t line" y="286"><tspan class="ok" x="26">&#10004;</tspan><tspan class="cmd" x="44">mindbase</tspan><tspan class="dim" x="152">cited answers over internal docs &#183; RAG</tspan></text>
+  <text id="l11" class="t line" y="308"><tspan class="ok" x="26">&#10004;</tspan><tspan class="cmd" x="44">drip-orch</tspan><tspan class="dim" x="152">NSE dividend reinvestment engine &#183; FastAPI</tspan></text>
+
+  <text class="t pmt" x="26" y="338">$</text>
+  <rect id="cursor" x="43" y="325" width="9" height="16" fill="#56D4DD"/>
+</svg>
